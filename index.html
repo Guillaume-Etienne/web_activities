@@ -10,6 +10,7 @@
     
     <!-- Twitter summary card avec image large de 280x150px -->
     
+    
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,10 +54,10 @@
     <main>
         <section id="intro">
             <div id="backgroundimg1" class="backgroundimg">
-                <div id="vignette1" class="vignette">
+                <div id="vignette1" class="vignette" data-aos="fade-right">
                     <!-- celle en orange -->
                 </div>
-                <div id="vignette2" class="vignette">
+                <div id="vignette2" class="vignette" data-aos="fade-down">
                     <h3>A BILENE CA BOUGE SA MEME</h3>
                     <h2>Les excurstions aventures et cultures</h2>
                     <p>Un peu de texte si besoin (d'autres auront du long)</p>
@@ -117,7 +118,7 @@
             <div id="stylematon">
                 <!-- orange -->
             </div>
-            <div id="vignettematon" class="vignette">
+            <div id="vignettematon" class="vignette"  data-aos="fade-down">
                 <h2>How to plan a trip</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum doloremque inventore molestias error iure possimus fugiat accusantium quam repudiandae eligendi, consequatur cum praesentium, ipsa eos. Deserunt quos fugiat ipsam.</p>
                 <button>NOUS CONTACTER</button>
@@ -134,10 +135,13 @@
         </div>  
         <a href="https://fto110.wixsite.com/air-tricks">Air Tricks prod <span id="activeyear">2022</span></a>      
     </footer>
-    <script src="./js/burger.js"></script>
-    <!-- pour aos : la lib d'animation -->
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-    <!-- <script src="./js/swicthlang.js"></script> -->
+        
 </body>
+<script src="./js/burger.js"></script>
+
+<!-- pour aos : la lib d'animation    la version locale ne fonctionne pas mais c'est parce que t'as du oublier des sous répertoires... -->
+<link href="/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>      <!-- puisqu'avec celle la ça marche -->
+<!-- <script src="/dist/aos.js"></script> -->
+<script> AOS.init();</script>
 </html>
