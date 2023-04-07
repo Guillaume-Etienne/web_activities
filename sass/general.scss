@@ -171,6 +171,47 @@ h1{
     align-items: center;
     justify-content: space-around;
 }
+#photomaton{    
+    display: flex;
+    flex-direction: column;
+    & img{
+        margin-left: 50px;
+        max-width: 300px;
+        border-radius: 50px;
+    }
+    & img:nth-child(1) {
+        z-index: 6;
+    }
+    & img:nth-child(2) {
+        z-index: 5;
+        margin-top: -40px;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    & #ntchild3 {
+        z-index: 6;
+        margin-top: -60px;
+    }
+    & #ntchild4 {
+        z-index: 7;
+        margin-top: -60px;
+        margin-left: 80px;
+    }
+}
+#stylematon{
+    margin-top: -10px;
+    background-color: $colorbackground2;
+    height: 500px;
+    margin-left: 30%;
+}
+#vignettematon{
+    z-index: 7;
+    margin-top: -550px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: $colorbackground;
+    padding: 30px;
+}
 // hallucinant : après plusieurs manip, le responsive ne fonctionne qu'en important ici ci-dessous
 @import "./desktopresponsive";
 
