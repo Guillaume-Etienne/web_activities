@@ -1,0 +1,92 @@
+@import "./variables";
+@import "./menu_burger";
+@import "./animations";
+
+// general, 
+
+*{
+    box-sizing: border-box;
+    // text-shadow: 0 0 1px $textshadow; 
+}
+a{
+    text-decoration: none;
+    color: $colorprimary;
+    &:visited{
+        color: $colorprimary;
+    }        
+}
+body
+{
+    margin: 0;    
+    padding: 0;
+    // min-width: 380px;
+    // max-width: 1400px;
+    background: $colorbackground;    
+    font-family: "Roboto", "Avenir", sans-serif;
+    animation: fromUp 1.8s;
+    & em{
+        font-style:normal;         
+        text-shadow: 0 0 2px $textshadow;
+    }
+    & a {
+        font-weight: bold;
+    }
+}
+header{    
+    position:sticky;
+    background-color: $colorbackground;
+    top:0px;
+    padding: 0 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & img{
+        margin: -10px 0 -10px 0;
+        width: 70px;
+    }
+}
+h1, h2{
+    text-align: center;
+}
+#lang {
+    background-color: $colorsecondary;        
+        border-radius: 20px;
+        padding: 0 20px 0 20px;
+}
+
+main{
+    color: $colorprimary;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    & p{
+        text-align: center;
+        margin: 0 5px;
+    }
+}
+
+footer{
+    margin-top: 0;
+    padding: 10px;
+    color: $colorsecondary;
+    background-color: $colorbackground4;
+    text-align: center;
+    & a {
+        color: $colorsecondary;
+    }
+    & p {
+        margin-top: 0;
+    } 
+    & #footicons{
+        display: flex;
+        padding: 0;
+        justify-content:center;
+        & img{
+            width: 50px;
+            margin: 10px 20px 10px 20px;
+        }
+    }    
+}
+// hallucinant : après plusieurs manip, le responsive ne fonctionne qu'en important ici ci-dessous
+@import "./desktopresponsive";
+
