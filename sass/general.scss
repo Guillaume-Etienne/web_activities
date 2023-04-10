@@ -37,7 +37,8 @@ body
         font-weight: bold;
     }
 }
-header{    
+header{
+    z-index: 7;
     position:sticky;
     background-color: $colorbackground;
     top:0px;
@@ -91,11 +92,12 @@ footer{
     display: flex;
 }
 #backgroundimg1 {
-    background-image: url("/images/1-accueil/6dispo.webp");
+    background-image: url("../images/1-accueil/6dispo.webp");    
 }
 .backgroundimg {
     margin: 0;
     width: 100%;
+    background-repeat: no-repeat;
 }
 #vignette1 {
     background-color: $colorbackground2;
@@ -117,7 +119,7 @@ footer{
     padding: 0;
 }
 #backgroundimg2 {
-    background-image: url("/images/1-accueil/10.webp");
+    background-image: url("../images/1-accueil/10.webp");
     min-height: 400px;
     display: flex;
     justify-content: center;
