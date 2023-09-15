@@ -87,12 +87,13 @@ footer{
     }    
 }
 
-// Pages    - Accueil -
+// Pages   --------------------- Accueil -------------------
 #intro{
     display: flex;
 }
 #backgroundimg1 {
-    background-image: url("../images/1-accueil/6dispo.webp");    
+    background-image: url("../images/1-accueil/1.webp");
+    background-size: cover;  
 }
 .backgroundimg {
     margin: 0;
