@@ -32,10 +32,7 @@ body
     & em{
         font-style:normal;         
         text-shadow: 0 0 2px $textshadow;
-    }
-    & a {
-        font-weight: bold;
-    }
+    }    
 }
 header{
     z-index: 7;
@@ -49,6 +46,9 @@ header{
     & img{
         margin: -10px 0 -10px 0;
         width: 70px;
+    }
+    & a{
+        font-style: bold;
     }
 }
 #lang {
@@ -215,6 +215,11 @@ h1{
     margin-right: 15%;
     background-color: $colorbackground;
     padding: 30px;
+}
+// Pages   --------------------- excursions -------------------
+#backgroundimgexcu {
+    background-image: url("../images/2-excursions/13-concu.webp");
+    background-size: cover;  
 }
 // hallucinant : après plusieurs manip, le responsive ne fonctionne qu'en important ici ci-dessous
 @import "./desktopresponsive";
