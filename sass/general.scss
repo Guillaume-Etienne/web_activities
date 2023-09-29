@@ -169,7 +169,7 @@ h1{
 }
 .flexbottom{
     padding: 10px 40px 20px 40px;
-    height: 200px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,6 +220,20 @@ h1{
 #backgroundimgexcu {
     background-image: url("../images/2-excursions/13-concu.webp");
     background-size: cover;  
+}
+
+.additional-text {
+    display: none;
+}
+
+/* Style des boutons */
+.toggle-button {
+    cursor: pointer;    
+}
+
+/* Style des paragraphes */
+.flexbottom {
+    margin-bottom: 20px;
 }
 // hallucinant : après plusieurs manip, le responsive ne fonctionne qu'en important ici ci-dessous
 @import "./desktopresponsive";
