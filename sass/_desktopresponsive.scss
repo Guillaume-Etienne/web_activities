@@ -4,7 +4,7 @@
         position:relative;
         & img{
             // width: 90px;
-            margin: auto;
+            margin: auto;            
         }
     }
     body{
@@ -92,6 +92,31 @@
         width: 90%;
     }
     // Pages
+    .vignette {
+        max-width: 90%;
+    }
+    #vignette2 {
+        padding-left: 30%;
+    }
+    #photomaton {
+        //align-items:center;
+        & img:nth-child(1) {            
+            margin-left: 30px;
+            max-width: 600px;           
+        }
+        & img:nth-child(2) {            
+            margin-left: auto;
+            margin-right: 30px;
+            max-width: 600px;          
+        }
+    }
+    #vignettematon {
+        margin-top: -1150px;
+    }
+    #stylematon {
+        //display: none;
+    }
+
     #headsection{
         height: 260px;
         & h1{
